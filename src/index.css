@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--bgColor : #2b324a;
+	--textColor : #f8f4f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: var(--bgColor) ;
+  color: var(--textColor);
+  font-family: 'Handjet', cursive;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	animation: fadein 2s 0.2s 1;
+	margin-bottom: 25em;
+	margin-top: 10em;
+}
+
+.nameTitle {
+	font-size: 9.375rem;
+	font-family: 'Borel', cursive;
+	overflow: visible;
+	margin: 0;
+}
+
+.subtitle {
+	font-size: 3.125rem;
+	margin: 0;
+}
+
+.pages {
+	display: flex;
+	flex-direction: column;
+	animation: appear 5s 0s;
+	gap: 10em
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.pagetitle {
+	font-size: 3.125rem;
+}
+
+.pageimages {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+
+.pageimage {
+	max-width: 40em;
+	border-radius: 1em;
+	border: 5px solid #838caa;
+	box-shadow: 0.5em 1em 0 #292a2e;
+}
+
+.footer {
+	margin-top: 3em;
+	background-color: #22273a;
+	padding: 2em;
+	text-align: center;
+}
+
+.unlink {
+	color: inherit;
+}
+
+@keyframes fadein {
+	0% {width: 0px; opacity: 0%;}
+	25% { opacity: 0%;}
+	100% {width: 100%; opacity: 100%;}
+}
+
+@keyframes appear {
+	0% { opacity: 0%;}
+	100% { opacity: 100%;}
+}
+
+@media (max-width: 806px) {
+
+	.nameTitle {
+		font-size: 2.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.5em;
+	}
+
+	.pageimages {
+		flex-direction: column;
+	}
+
+	.pageimage {
+		max-width: 310px;
+	}
 }
