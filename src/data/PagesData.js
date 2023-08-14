@@ -6,19 +6,22 @@ const data = [
     {
         id: 1,
         appname: "CoffeStop",
-        images: [
-            coffdesk,
-            coffmob
-        ],
-        appurl: "https://coffeestopshop.netlify.app"
+        description: "A web for ordering your favorite type of coffe!",
+        madewith: "React, React-Router, Firebase",
+        imagedesk: coffdesk,
+        imagemob: coffmob,
+        appurl: "https://coffeestopshop.netlify.app",
+        githuburl: "https://github.com/PatoTey/CoffeeStop"
     },
     {
         id: 2,
         appname: "MyCartList",
-        images: [
-            mclmob
-        ],
-        appurl: "https://mycartlist.netlify.app"
+        description: "A tiny shopping list app",
+        madewith: "React, React-Router, forms",
+        imagedesk: undefined,
+        imagemob: mclmob,
+        appurl: "https://mycartlist.netlify.app",
+        githuburl: "https://github.com/PatoTey/MyCartList"
     }
 ]
 

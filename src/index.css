@@ -16,7 +16,7 @@ body {
 	text-align: center;
 	animation: fadein 2s 0.2s 1;
 	margin-bottom: 25em;
-	margin-top: 10em;
+	margin-top: 8em;
 }
 
 .nameTitle {
@@ -24,11 +24,28 @@ body {
 	font-family: 'Borel', cursive;
 	overflow: visible;
 	margin: 0;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(.56,.17,.35,.95);
+	animation-direction: alternate;
 }
 
 .subtitle {
 	font-size: 3.125rem;
 	margin: 0;
+}
+
+.socialslinks {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+.sociallink {
+	width: 2em;
 }
 
 .pages {
@@ -48,6 +65,12 @@ body {
 	font-size: 3.125rem;
 }
 
+.pagedescription {
+	font-size: 2rem;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
 .pageimages {
 	display: flex;
 	flex-direction: row;
@@ -56,11 +79,45 @@ body {
 	gap: 2em;
 }
 
-.pageimage {
+.pageimagedesk {
 	max-width: 40em;
 	border-radius: 1em;
 	border: 5px solid #838caa;
 	box-shadow: 0.5em 1em 0 #292a2e;
+}
+
+.pageimagemob {
+	max-width: 10em;
+	border-radius: 1em;
+	border: 5px solid #838caa;
+	box-shadow: 0.5em 1em 0 #292a2e;
+}
+
+.logogit {
+	width: 2em;
+}
+
+.logolkdin {
+	width: 2em;
+}
+
+.srclinks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+}
+
+.srclink {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	color: inherit;
+	text-decoration: none;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 .footer {
@@ -85,6 +142,16 @@ body {
 	100% { opacity: 100%;}
 }
 
+@keyframes rotate {
+	0% { transform: rotate(2deg);}
+	100% { transform: rotate(-2deg);}
+}
+
+@keyframes bounce {
+	0% {transform: translateY(10px)}
+	100% { transform: translateY(0px);}
+}
+
 @media (max-width: 806px) {
 
 	.nameTitle {
@@ -99,7 +166,7 @@ body {
 		flex-direction: column;
 	}
 
-	.pageimage {
+	.pageimagedesk {
 		max-width: 310px;
 	}
 }
