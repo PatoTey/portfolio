@@ -1,6 +1,6 @@
-import coffdesk from "../images/coffestopdesktop.png"
-import coffmob from "../images/coffestopmobile.png"
-import mclmob from "../images/mclmobile.png"
+import csmob from "../images/csmobileshot.png"
+import csdesk from "../images/csdeskshot.png"
+import mclmob from "../images/mclmob.png"
 
 const data = [
     {
@@ -8,9 +8,11 @@ const data = [
         appname: "CoffeStop",
         description: "A web for ordering your favorite type of coffe!",
         madewith: "React, React-Router, Firebase",
-        imagedesk: coffdesk,
-        imagemob: coffmob,
+        imagedesk: csdesk,
+        imagemob: csmob,
+        hasdemo: true,
         appurl: "https://coffeestopshop.netlify.app",
+        hascode: true,
         githuburl: "https://github.com/PatoTey/CoffeeStop"
     },
     {
@@ -20,7 +22,9 @@ const data = [
         madewith: "React, React-Router, forms",
         imagedesk: undefined,
         imagemob: mclmob,
+        hasdemo: true,
         appurl: "https://mycartlist.netlify.app",
+        hascode: true,
         githuburl: "https://github.com/PatoTey/MyCartList"
     }
 ]

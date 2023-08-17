@@ -18,14 +18,14 @@ export default function Pages(){
                 </div>
                 <h3 className="pagemade">Made with: {page.madewith} </h3>
                 <span className="srclinks">
-                    <a href={page.githuburl} target="_blank" rel="noreferrer" className="srclink">
+                    {page.hascode && <a href={page.githuburl} target="_blank" rel="noreferrer" className="srclink">
                         <img className="logogit" alt="logo of a programing cat" src={logogit} /> 
                         See code
-                    </a>
-                    <a href={page.appurl} target="_blank" rel="noreferrer" className="srclink">
-                        <img className="logolkdin" src={logodemo} alt="html tags" /> 
+                    </a>}
+                    {page.hasdemo && <a href={page.appurl} target="_blank" rel="noreferrer" className="srclink">
+                        <img className="logodemo" src={logodemo} alt="html tags" /> 
                         Demo here
-                    </a>
+                    </a>}
                 </span>
             </div>
         )
