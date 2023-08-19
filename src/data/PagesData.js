@@ -1,6 +1,7 @@
 import csmob from "../images/csmobileshot.png"
 import csdesk from "../images/csdeskshot.png"
 import mclmob from "../images/mclmob.png"
+import gmmob from "../images/gmmob.png"
 
 const data = [
     {
@@ -17,6 +18,18 @@ const data = [
     },
     {
         id: 2,
+        appname: "Gamon",
+        description: "A game store app",
+        madewith: "React, React-Router, Node Express, MySQL",
+        imagedesk: undefined,
+        imagemob: gmmob,
+        hasdemo: false,
+        appurl: "",
+        hascode: false,
+        githuburl: ""
+    },
+    {
+        id: 3,
         appname: "MyCartList",
         description: "A tiny shopping list app",
         madewith: "React, React-Router, forms",
