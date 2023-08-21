@@ -1,7 +1,7 @@
 import csmob from "../images/csmobileshot.png"
 import csdesk from "../images/csdeskshot.png"
 import mclmob from "../images/mclmob.png"
-import gmmob from "../images/gmmob.png"
+import gmmob from "../images/gmmob2.png"
 
 const data = [
     {
