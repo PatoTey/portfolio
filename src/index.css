@@ -64,13 +64,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	animation: appear 5s 0s;
-	gap: 10em
+	gap: 10em;
 }
 
 .page {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+
+	animation: reveal linear both;
+	animation-timeline: view();
+	animation-range: entry 20% cover 40%;
 }
 
 .pagetitle {
@@ -205,6 +209,17 @@ body {
 @keyframes bounce {
 	0% {transform: translateY(10px)}
 	100% { transform: translateY(0px);}
+}
+
+@keyframes reveal {
+	0% { 
+		opacity: 0;
+		translate: 0 50px;
+	}
+	100% {
+		opacity: 1;
+		translate: 0 0;
+	}
 }
 
 @media (max-width: 806px) {
